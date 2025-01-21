@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    background: pink;
+    height: 800px;
+    border-radius: 40px;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 200px;
+    transition: 1s ease-in-out;
+}
+
+.card button{
+    padding: 2px 5px;
+    font-size: 2.2vh;
+    margin-left: 10px;
+    width: 70px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+#text{
+    font-size: 4vh;
+    color: crimson;
+}
+
+#no{
+    position: relative;
+    background: white;
+    border: none;
+    color: black;
+}
+
+#yes{
+    background: white;
+    border: none;
+    color: black;
+}
+
+#q, #h, #k, #u{
+    font-size: 40px;
+    opacity: 0;
+    transition: 2s ease;
+    color: rgb(243, 83, 110);
+}
+
+.bacche{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
