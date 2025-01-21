@@ -15,7 +15,14 @@ no.addEventListener('click', (e) => {
     let randomTop = Math.random()*200 + (-Math.random()*200)
     no.style.top = `${randomTop}px`
     no.style.left = `${randomLeft}px`
-    text.innerHTML = 'Kheryt?'
+    if (count > 5){
+        text.innerHTML = 'bass na!'
+    } else if (count > 10){
+        no.style.display = 'none'
+        text.innerHTML = 'Khamoshi se qubool kro'
+    } else if (count <= 5){
+        text.innerHTML = 'Kheryt?'
+    }
 })
 
 yes.addEventListener('click', () => {
@@ -27,9 +34,3 @@ yes.addEventListener('click', () => {
     u.style.opacity = '100%'
 })
 
-if (count > 5){
-    text.innerHTML = 'bass na!'
-} else if (count > 10){
-    no.style.display = 'none'
-    text.innerHTML = 'Khamoshi se qubool kro!'
-}
