@@ -16,7 +16,7 @@ no.addEventListener('click', (e) => {
 })
 
 yes.addEventListener('click', () => {
-    text.innerHTML = "Qubool"
+    text.innerHTML = "Qubool Qubool Qubool"
     card.style.opacity = '0'
     q.style.opacity = '100%'
     h.style.opacity = '100%'
