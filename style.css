@@ -10,7 +10,7 @@ body, html{
 }
 
 .card{
-    background: pink;
+    background: rgb(253, 132, 152);
     height: 800px;
     border-radius: 40px;
     width: 100vw;
