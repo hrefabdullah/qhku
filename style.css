@@ -65,3 +65,14 @@ body, html{
     align-items: center;
     justify-content: center;
 }
+
+
+#version{
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: #a19e9e;
+    font-size: 14px;
+}
