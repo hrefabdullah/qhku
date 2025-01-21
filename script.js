@@ -15,7 +15,7 @@ no.addEventListener('click', (e) => {
     let randomTop = Math.random()*200 + (-Math.random()*200)
     no.style.top = `${randomTop}px`
     no.style.left = `${randomLeft}px`
-    if (count > 5){
+    if (count > 5 && count <= 10){
         text.innerHTML = 'bass na!'
     } else if (count > 10){
         no.style.display = 'none'
