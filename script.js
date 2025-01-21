@@ -7,7 +7,10 @@ const h = document.querySelector('#h')
 const k = document.querySelector('#k')
 const u = document.querySelector('#u')
 
+let count = 0
+
 no.addEventListener('click', (e) => {
+    count += 1
     let randomLeft = Math.random()*200 + (-Math.random()*200)
     let randomTop = Math.random()*200 + (-Math.random()*200)
     no.style.top = `${randomTop}px`
@@ -23,3 +26,10 @@ yes.addEventListener('click', () => {
     k.style.opacity = '100%'
     u.style.opacity = '100%'
 })
+
+if (count > 5){
+    text.innerHTML = 'bass na!'
+} else if (count > 10){
+    no.style.display = 'none'
+    text.innerHTML = 'Khamoshi se qubool kro!'
+}
